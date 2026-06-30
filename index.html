@@ -314,7 +314,20 @@
   .ft .sig-heart {
     width: 60px; height: 60px;
     margin: 0 auto 8px;
-    background: url('heart.png')"></div>
+    background: url('heart.png') center/contain no-repeat;
+  }
+
+  @media (max-width: 400px) {
+    .heart-intro-wrapper { width: 270px; height: 270px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HEART INTRO ═══════════ -->
+<div id="envelope-overlay" onclick="openEnv()">
+  <div class="heart-intro-wrapper" id="heartIntroWrap">
+    <div class="heart-intro-bg" style="background-image: url('heart.png')"></div>
     <div class="heart-intro-text">
       <span class="heart-intro-names">K <em style="color:#F8F2E8;font-style:normal">+</em> A</span>
     </div>
